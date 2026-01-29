@@ -3,20 +3,20 @@ pipeline {
 
     environment {
         APP_NAME = 'hafis-web'
-        APP_PORT = '8082' // Bisa diganti kalau port bentrok
+        APP_PORT = '8082'
     }
 
     stages {
         stage('Build Docker Image') {
             steps {
-                // Build image tanpa cache supaya selalu update
+            sleep (5)
                 sh 'docker build --no-cache -t ${APP_NAME}:latest .'
             }
         }
 
         stage('Deploy Container') {
             steps {
-                // Stop container lama jika ada, lalu run baru
+               sleep(5)
                 sh '''
                   docker rm -f ${APP_NAME} || true
                   docker run -d \

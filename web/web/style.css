@@ -1,37 +1,60 @@
-/* Gaya dasar body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0f172a; /* gelap keren */
-    color: #e5e7eb;           /* teks putih terang */
+    background-color: #f4f4f9;
+    color: #1e293b;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0f172a;
+    color: #f8fafc;
     text-align: center;
-    padding-top: 80px;
+    padding: 40px 20px;
 }
 
-/* Judul besar */
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #38bdf8; /* biru neon */
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-/* Paragraf */
-p {
-    font-size: 18px;
-    margin-bottom: 30px;
+header p {
+    font-size: 20px;
+    color: #38bdf8;
 }
 
-/* Tombol */
+section {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #0f172a;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
 button {
+    margin-top: 10px;
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #22c55e; /* hijau */
+    background-color: #22c55e;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #16a34a; /* hijau lebih gelap saat hover */
+    background-color: #16a34a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: #f8fafc;
 }

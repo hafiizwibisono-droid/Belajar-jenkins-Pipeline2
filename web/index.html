@@ -2,14 +2,35 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Aplikasi Hafis</title>
+    <title>Portofolio Hafis</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>🚀 Selamat datang di aplikasi saya!</h1>
-    <p id="msg">Ini aplikasi hasil codingan sendiri, deploy via Jenkins + Docker.</p>
-    <button onclick="ubahPesan()">Klik Aku</button>
+    <header>
+        <h1>Hafis Wibisono</h1>
+        <p>Fresh Graduate / SysAdmin / DevOps Engineer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Saya suka belajar DevOps, membangun pipeline CI/CD, dan mengembangkan aplikasi menggunakan Docker & Jenkins.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul id="project-list">
+            <li>Pipeline Jenkins + Docker</li>
+            <li>Nextcloud setup & deploy</li>
+            <li>Belajar Kubernetes & CI/CD</li>
+        </ul>
+        <button onclick="addProject()">Tambah Project Baru</button>
+    </section>
+
+    <footer>
+        <p>Contact: hafis@example.com</p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
 </html>
+
